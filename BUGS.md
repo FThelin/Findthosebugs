@@ -17,7 +17,7 @@ Buggarna pekar inte ut fil eller rad — det är en del av uppgiften att lokalis
 
 ### Bugg 2 — Fel uppgift markeras som klar
 
-> "När jag bockar av en uppgift i listan är det ofta en helt annan uppgift än den jag klickade på som markeras som klar."
+> "När jag bockar av en uppgift i listan är det ofta en helt annan uppgift än den jag klickade på som markeras som klar. När vi markerar en uppgift som klar borde vi kolla så att det är rätt uppgift"
 
 ### Bugg 3 — Filtret 'Klara' visar fel uppgifter
 
