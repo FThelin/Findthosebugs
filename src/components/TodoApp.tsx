@@ -15,9 +15,9 @@ export default function TodoApp() {
     setTodos((prev) => [...prev, { id: nextId++, text, completed: false }])
   }
 
-  function toggleTodo(index: number) {
+  function toggleTodo(id: number) {
     setTodos((prev) =>
-      prev.map((todo, i) => (i === index ? { ...todo, completed: !todo.completed } : todo)),
+      prev.map((todo, index) => (index === id ? { ...todo, completed: !todo.completed } : todo)),
     )
   }
 

@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 
 interface TodoListProps {
   todos: Todo[]
-  onToggle: (index: number) => void
+  onToggle: (id: number) => void
   onDelete: (id: number) => void
 }
 
@@ -14,11 +14,11 @@ export default function TodoList({ todos, onToggle, onDelete }: TodoListProps) {
 
   return (
     <ul className="todo-list">
-      {todos.map((todo, index) => (
+      {todos.map((todo) => (
         <TodoItem
           key={todo.id}
           todo={todo}
-          onToggle={() => onToggle(index)}
+          onToggle={() => onToggle(todo.id)}
           onDelete={() => onDelete(todo.id)}
         />
       ))}
